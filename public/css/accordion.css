@@ -1,0 +1,58 @@
+.cab-accordion-wrapper {
+  border: var(--cab-border-width, 1px) solid var(--cab-border-color, #ddd);
+  border-radius: 6px;
+  overflow: hidden;
+  direction: rtl;
+  margin: 1.5em auto;
+}
+
+.cab-accordion-item {
+  border-top: 1px solid #eee;
+}
+
+.cab-accordion-item:first-child {
+  border-top: none;
+}
+
+.cab-accordion-header {
+  width: 100%;
+  padding: var(--cab-header-padding, 1em);
+  background: var(--cab-bg-color, #f9f9f9);
+  border: none;
+  font-size: var(--cab-font-size, 1.1rem);
+  text-align: right;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cab-accordion-header:hover {
+  background: #f1f1f1;
+}
+
+.cab-accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: var(--cab-panel-bg, #fff);
+}
+
+.cab-accordion-panel.expanded {
+  overflow: visible;
+}
+
+.cab-accordion-content {
+  padding: var(--cab-content-padding, 1em);
+  font-size: var(--cab-content-font-size, 1rem);
+  border-top: var(--cab-content-border-width, 1px) solid #eee;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
