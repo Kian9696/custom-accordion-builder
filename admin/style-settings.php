@@ -64,6 +64,24 @@ function cab_render_style_settings_page()
                     <td><input type="text" id="content_border_width" name="cab_style_options[content_border_width]"
                             value="<?php echo esc_attr($options['content_border_width'] ?? '1px'); ?>"></td>
                 </tr>
+                <tr>
+                    <th scope="row"><label for="row_gap">فاصله بین آیتم‌ها (row-gap)</label></th>
+                    <td><input type="text" id="row_gap" name="cab_style_options[row_gap]"
+                            value="<?php echo esc_attr($options['row_gap'] ?? '12px'); ?>"></td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><label for="header_color">رنگ تیتر و آیکن</label></th>
+                    <td><input type="color" id="header_color" name="cab_style_options[header_color]"
+                            value="<?php echo esc_attr($options['header_color'] ?? '#000000'); ?>"></td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><label for="expanded_bg">رنگ پس‌زمینه در حالت باز</label></th>
+                    <td><input type="color" id="expanded_bg" name="cab_style_options[expanded_bg]"
+                            value="<?php echo esc_attr($options['expanded_bg'] ?? '#d0d6db'); ?>"></td>
+                </tr>
+
 
             </table>
             <?php submit_button('ذخیره تنظیمات'); ?>

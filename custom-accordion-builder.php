@@ -61,6 +61,9 @@ function cab_enqueue_assets()
         --cab-content-padding: {$style['content_padding']};
         --cab-content-font-size: {$style['content_font_size']};
         --cab-content-border-width: {$style['content_border_width']};
+        --cab-row-gap: {$style['row_gap']};
+        --cab-header-color: {$style['header_color']};
+        --cab-expanded-bg: {$style['expanded_bg']};
     }";
 
     wp_add_inline_style('cab-accordion-style', $custom_css);
